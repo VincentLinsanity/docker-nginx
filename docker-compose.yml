@@ -1,0 +1,8 @@
+nginx:
+  image: nginx:latest
+  ports:
+    - "8081:80"
+  volumes:
+    - "./Assets/html/:/usr/share/nginx/html:ro"
+  environment:
+    - NGINX_PORT=80
